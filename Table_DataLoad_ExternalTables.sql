@@ -68,11 +68,11 @@ VALUES
 ),
 (
     N'dbo', N'tblCustOrdL', N'recid',
-    N'recid int NOT NULL, ordnum int NOT NULL, lnenum int NOT NULL, stock_code varchar(8) NOT NULL, [desc] varchar(35) NOT NULL, ordered int NOT NULL, picked int NOT NULL, pkg_code varchar(8) NOT NULL, unit decimal(18, 2) NOT NULL, discpercent decimal(18, 3) NOT NULL, discdollars decimal(18, 2) NOT NULL, tax decimal(18, 3) NOT NULL'
+    N'recid int NOT NULL, ordnum int NOT NULL, lnenum int NOT NULL, stock_code varchar(8) NOT NULL, [desc] varchar(50) NOT NULL, ordered int NOT NULL, picked int NOT NULL, pkg_code varchar(8) NOT NULL, unit decimal(18, 2) NOT NULL, discpercent decimal(18, 3) NOT NULL, discdollars decimal(18, 2) NOT NULL, tax decimal(18, 3) NOT NULL'
 ),
 (
     N'dbo', N'tblCustOrdr', N'recid',
-    N'recid int NOT NULL, cont_code varchar(8) NOT NULL, orddate smalldatetime NOT NULL, ordnum int NULL, comm1 varchar(35) NULL, comm2 varchar(35) NULL, comm3 varchar(35) NULL, comm4 varchar(35) NULL, expected smalldatetime NULL, deliv_inst_1 varchar(35) NULL, deliv_inst_2 varchar(35) NULL, deliv_inst_3 varchar(35) NULL, run varchar(8) NULL, position int NULL, trnsprt varchar(8) NULL, picked smallint NOT NULL, orduser varchar(8) NOT NULL, pckuser varchar(8) NULL'
+    N'recid int NOT NULL, cont_code varchar(8) NOT NULL, orddate smalldatetime NOT NULL, ordnum varchar(20) NULL, comm1 varchar(35) NULL, comm2 varchar(35) NULL, comm3 varchar(35) NULL, comm4 varchar(35) NULL, expected smalldatetime NULL, deliv_inst_1 varchar(35) NULL, deliv_inst_2 varchar(35) NULL, deliv_inst_3 varchar(35) NULL, run varchar(8) NULL, position int NULL, trnsprt varchar(8) NULL, picked smallint NOT NULL, orduser varchar(8) NOT NULL, pckuser varchar(8) NULL'
 ),
 (
     N'dbo', N'tblPkg', N'recid',
