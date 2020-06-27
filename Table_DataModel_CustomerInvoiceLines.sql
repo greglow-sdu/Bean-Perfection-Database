@@ -10,7 +10,7 @@ CREATE TABLE DataModel.CustomerInvoiceLines
     CustomerInvoiceNumber int NOT NULL,
     InvoiceLineNumber int NOT NULL,
     StockItemKey int NOT NULL,
-    ItemDescription varchar(50) NOT NULL,
+    ItemDescription nvarchar(50) NOT NULL,
     OrderedQuantity int NOT NULL,
     DeliveredQuantity int NOT NULL,
     BackorderedQuantity int NOT NULL,
