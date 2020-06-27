@@ -1,0 +1,17 @@
+Loading Order for Database Object Files
+
+DatabaseMasterKey
+DatabaseScopedCredential
+Schemas
+Sequences
+SDU_Tools procedures and functions
+Tables
+DataModel indexes
+Reference Data 
+Other DataLoad functions
+DataLoad stored procedures 
+Execute proc to create External Data Sources
+External Tables
+Views
+All other functions
+All other stored procedures
