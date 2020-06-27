@@ -84,7 +84,7 @@ VALUES
 ),
 (
     N'dbo', N'tblStokGnrl', N'recid',
-    N'recid int NOT NULL, stock_code varchar(8) NOT NULL,desc varchar(50) NOT NULL,size varchar(20) NULL,pkg_code varchar(8) NOT NULL,wgt decimal(18, 3) NOT NULL,scat_code varchar(8) NOT NULL,bcode varchar(20) NULL,taxprcnt decimal(18,3) NOT NULL,trk_qty smallint NOT NULL,unit decimal(18,2) NOT NULL,bulk decimal(18,2) NOT NULL,wsale decimal(18,2) NOT NULL,agent decimal(18,2) NOT NULL,rrp decimal(18,2) NOT NULL,promo decimal(18,2) NULL,promo_from smalldatetime NULL,promo_to smalldatetime NULL,outerqty int NOT NULL,ctnqty int NOT NULL,palletqty int NOT NULL,pricelist smallint NOT NULL,added smalldatetime NOT NULL,lstpricechange smalldatetime NOT NULL,brand varchar(15) NOT NULL,orderpkg varchar(8) NOT NULL,weight decimal(18, 3) NOT NULL,onhand int NOT NULL,lststocktake int NULL,reorder int NOT NULL,leadtime int NOT NULL,r_active smallint NOT NULL,l_cost decimal(18, 2) NULL,comment varchar(4000) NULL,supplier varchar(8) NULL,altsupplier varchar(8) NULL,suppstk_code varchar(20) NULL,altsuppstk_code varchar(20) NULL'
+    N'recid int NOT NULL, stock_code varchar(8) NOT NULL,[desc] varchar(50) NOT NULL,size varchar(20) NULL,pkg_code varchar(8) NOT NULL,wgt decimal(18, 3) NOT NULL,scat_code varchar(8) NOT NULL,bcode varchar(20) NULL,taxprcnt decimal(18,3) NOT NULL,trk_qty smallint NOT NULL,unit decimal(18,2) NOT NULL,bulk decimal(18,2) NOT NULL,wsale decimal(18,2) NOT NULL,agent decimal(18,2) NOT NULL,rrp decimal(18,2) NOT NULL,promo decimal(18,2) NULL,promo_from smalldatetime NULL,promo_to smalldatetime NULL,outerqty int NOT NULL,ctnqty int NOT NULL,palletqty int NOT NULL,pricelist smallint NOT NULL,added smalldatetime NOT NULL,lstpricechange smalldatetime NOT NULL,brand varchar(15) NOT NULL,orderpkg varchar(8) NOT NULL,weight decimal(18, 3) NOT NULL,onhand int NOT NULL,lststocktake int NULL,reorder int NOT NULL,leadtime int NOT NULL,r_active smallint NOT NULL,l_cost decimal(18, 2) NULL,comment varchar(4000) NULL,supplier varchar(8) NULL,altsupplier varchar(8) NULL,suppstk_code varchar(20) NULL,altsuppstk_code varchar(20) NULL'
 ),
 (
     N'dbo', N'tblStokTran', N'recid',
@@ -92,7 +92,7 @@ VALUES
 ),
 (
     N'dbo', N'tblSuppOrdL', N'recid',
-    N'recid int NOT NULL, ordnum int NOT NULL, lnenum int NOT NULL, stock_code varchar(8) NOT NULL, suppstk_code varchar(20) NOT NULL, desc varchar(50) NOT NULL, ordered int NOT NULL, recd int NOT NULL, pkg_code varchar(8) NOT NULL, unit decimal(18,2) NOT NULL, discpercent decimal(18, 3) NOT NULL, discdollars decimal(18, 2) NOT NULL, tax decimal(18,3) NOT NULL'
+    N'recid int NOT NULL, ordnum int NOT NULL, lnenum int NOT NULL, stock_code varchar(8) NOT NULL, suppstk_code varchar(20) NOT NULL, [desc] varchar(50) NOT NULL, ordered int NOT NULL, recd int NOT NULL, pkg_code varchar(8) NOT NULL, unit decimal(18,2) NOT NULL, discpercent decimal(18, 3) NOT NULL, discdollars decimal(18, 2) NOT NULL, tax decimal(18,3) NOT NULL'
 ),
 (
     N'dbo', N'tblSuppOrdr', N'recid',
@@ -104,6 +104,6 @@ VALUES
 ),
 (
     N'dbo', N'tblUser', N'recid',
-    N'recid int NOT NULL, user varchar(8) NOT NULL, staff varchar(30) NOT NULL, sperson smallint NOT NULL'
+    N'recid int NOT NULL, [user] varchar(8) NOT NULL, staff varchar(30) NOT NULL, sperson smallint NOT NULL'
 );
 GO
