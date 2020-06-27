@@ -14,7 +14,7 @@ CREATE TABLE DataModel.CustomerInvoiceLines
     OrderedQuantity int NOT NULL,
     DeliveredQuantity int NOT NULL,
     BackorderedQuantity int NOT NULL,
-    SellingPackageKey int NOT NULL,
+    SellingPackage nvarchar(35) NOT NULL,
     UnitPrice decimal(18, 2) NOT NULL,
     DiscountPercentage decimal(18, 3) NOT NULL,
     DiscountAmount decimal(18, 2) NOT NULL,
