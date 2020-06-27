@@ -29,7 +29,7 @@ CREATE TABLE DataModel.Suppliers
     WebsiteURL nvarchar(300) NULL,
     IsATransportCompany bit NOT NULL,
     AccountOpenedDate date NOT NULL,
-    SupplierAccountCode varchar(20) NULL,
+    SupplierAccountCode nvarchar(20) NULL,
     IsRecentlyActive bit NOT NULL,
     Comments nvarchar(4000) NULL,
     PreferedTransportCompanySupplierKey int NULL,
