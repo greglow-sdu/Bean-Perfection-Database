@@ -12,7 +12,7 @@ CREATE TABLE DataModel.StockItems
     Size nvarchar(20) NULL,
     SellingPackage nvarchar(35) NOT NULL,
     WeightPerUnit decimal(18, 3) NOT NULL,
-    StockCategoryKey int NOT NULL,
+    StockCategory nvarchar(35) NOT NULL,
     BarCode nvarchar(20) NULL,
     TaxRate decimal(18, 3) NOT NULL,
     IsStocktakeItem bit NOT NULL,
