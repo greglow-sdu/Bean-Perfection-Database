@@ -68,11 +68,11 @@ VALUES
 ),
 (
     N'dbo', N'tblCustOrdL', N'recid',
-    N'recid int NOT NULL, ordnum NOT NULL, lnenum NOT NULL, stock_code NOT NULL, [desc] NOT NULL, ordered NOT NULL, picked NOT NULL, pkg_code NOT NULL, unit NOT NULL, discpercent NOT NULL, discdollars NOT NULL, tax NOT NULL'
+    N'recid int NOT NULL, ordnum int NOT NULL, lnenum int NOT NULL, stock_code varchar(8) NOT NULL, [desc] varchar(35) NOT NULL, ordered int NOT NULL, picked int NOT NULL, pkg_code varchar(8) NOT NULL, unit decimal(18, 2) NOT NULL, discpercent decimal(18, 3) NOT NULL, discdollars decimal(18, 2) NOT NULL, tax decimal(18, 3) NOT NULL'
 ),
 (
     N'dbo', N'tblCustOrdr', N'recid',
-    N'recid int NOT NULL, cont_code NOT NULL, orddate NOT NULL, ordnum NULL, comm1 NULL, comm2 NULL, comm3 NULL, comm4 NULL, expected NULL, deliv_inst_1 NULL, deliv_inst_2 NULL, deliv_inst_3 NULL, run NULL, position NULL, trnsprt NULL, picked NOT NULL, orduser NOT NULL, pckuser NULL'
+    N'recid int NOT NULL, cont_code varchar(8) NOT NULL, orddate smalldatetime NOT NULL, ordnum int NULL, comm1 varchar(35) NULL, comm2 varchar(35) NULL, comm3 varchar(35) NULL, comm4 varchar(35) NULL, expected smalldatetime NULL, deliv_inst_1 varchar(35) NULL, deliv_inst_2 varchar(35) NULL, deliv_inst_3 varchar(35) NULL, run varchar(8) NULL, position int NULL, trnsprt varchar(8) NULL, picked smallint NOT NULL, orduser varchar(8) NOT NULL, pckuser varchar(8) NULL'
 ),
 (
     N'dbo', N'tblPkg', N'recid',
@@ -84,7 +84,7 @@ VALUES
 ),
 (
     N'dbo', N'tblStokGnrl', N'recid',
-    N'recid int NOT NULL, stock_code varchar(8) NOT NULL,[desc] varchar(50) NOT NULL,size varchar(20) NULL,pkg_code varchar(8) NOT NULL,wgt decimal(18, 3) NOT NULL,scat_code varchar(8) NOT NULL,bcode varchar(20) NULL,taxprcnt decimal(18,3) NOT NULL,trk_qty smallint NOT NULL,unit decimal(18,2) NOT NULL,bulk decimal(18,2) NOT NULL,wsale decimal(18,2) NOT NULL,agent decimal(18,2) NOT NULL,rrp decimal(18,2) NOT NULL,promo decimal(18,2) NULL,promo_from smalldatetime NULL,promo_to smalldatetime NULL,outerqty int NOT NULL,ctnqty int NOT NULL,palletqty int NOT NULL,pricelist smallint NOT NULL,added smalldatetime NOT NULL,lstpricechange smalldatetime NOT NULL,brand varchar(15) NOT NULL,orderpkg varchar(8) NOT NULL,weight decimal(18, 3) NOT NULL,onhand int NOT NULL,lststocktake int NULL,reorder int NOT NULL,leadtime int NOT NULL,r_active smallint NOT NULL,l_cost decimal(18, 2) NULL,comment varchar(4000) NULL,supplier varchar(8) NULL,altsupplier varchar(8) NULL,suppstk_code varchar(20) NULL,altsuppstk_code varchar(20) NULL'
+    N'recid int NOT NULL, stock_code varchar(8) NOT NULL,[desc] varchar(50) NOT NULL,size varchar(20) NULL,pkg_code varchar(8) NOT NULL,wgt decimal(18, 3) NOT NULL,scat_code varchar(8) NOT NULL,bcode varchar(20) NULL,taxprcnt decimal(18,3) NOT NULL,trk_qty smallint NOT NULL,unit decimal(18,2) NOT NULL,[bulk] decimal(18,2) NOT NULL,wsale decimal(18,2) NOT NULL,agent decimal(18,2) NOT NULL,rrp decimal(18,2) NOT NULL,promo decimal(18,2) NULL,promo_from smalldatetime NULL,promo_to smalldatetime NULL,outerqty int NOT NULL,ctnqty int NOT NULL,palletqty int NOT NULL,pricelist smallint NOT NULL,added smalldatetime NOT NULL,lstpricechange smalldatetime NOT NULL,brand varchar(15) NOT NULL,orderpkg varchar(8) NOT NULL,weight decimal(18, 3) NOT NULL,onhand int NOT NULL,lststocktake int NULL,reorder int NOT NULL,leadtime int NOT NULL,r_active smallint NOT NULL,l_cost decimal(18, 2) NULL,comment varchar(4000) NULL,supplier varchar(8) NULL,altsupplier varchar(8) NULL,suppstk_code varchar(20) NULL,altsuppstk_code varchar(20) NULL'
 ),
 (
     N'dbo', N'tblStokTran', N'recid',
