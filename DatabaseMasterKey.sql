@@ -1,0 +1,5 @@
+IF NOT EXISTS (SELECT * FROM sys.symmetric_keys WHERE [name] = N'##MS_DatabaseMasterKey##')
+BEGIN
+    CREATE MASTER KEY ENCRYPTION BY PASSWORD = '233223J#KL23234nl0zBe';
+END;
+GO
