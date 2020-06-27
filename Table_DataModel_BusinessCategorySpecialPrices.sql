@@ -8,7 +8,7 @@ CREATE TABLE DataModel.BusinessCategorySpecialPrices
         CONSTRAINT DF_DataModel_BusinessCategorySpecialPrices_BusinessCategorySpecialPriceKey
             DEFAULT (NEXT VALUE FOR DataModel.BusinessCategorySpecialPriceKey),
     BusinessCategoryKey int NOT NULL,
-    StockKey int NOT NULL,
+    StockItemKey int NOT NULL,
     DiscountPercentage decimal(18, 3) NOT NULL,
     DiscountAmount decimal(18, 2) NOT NULL,
     EstablishedDate date NOT NULL,
