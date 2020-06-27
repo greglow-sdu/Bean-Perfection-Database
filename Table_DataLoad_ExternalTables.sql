@@ -52,7 +52,7 @@ VALUES
 ),
 (
     N'dbo', N'tblContTran', N'recid',
-    N'recid int NOT NULL, cont_code varchar(8) NOT NULL, trannum int NOT NULL, dte smalldatetime NOT NULL, ttype_code varchar(1) NOT NULL, amnt decimal(18, 2) NOT NULL, tax decimal(18, 2) NOT NULL, ref varchar(20) NTO NULL, dueby smalldatetime NOT NULL, complete smallint NOT NULL, completed_date smalldatetime NOT NULL, ordnum varchar(20) NULL'
+    N'recid int NOT NULL, cont_code varchar(8) NOT NULL, trannum int NOT NULL, dte smalldatetime NOT NULL, ttype_code varchar(1) NOT NULL, amnt decimal(18, 2) NOT NULL, tax decimal(18, 2) NOT NULL, ref varchar(20) NOT NULL, dueby smalldatetime NOT NULL, complete smallint NOT NULL, completed_date smalldatetime NOT NULL, ordnum varchar(20) NULL'
 ),
 (
     N'dbo', N'tblCustBOrd', N'recid',
