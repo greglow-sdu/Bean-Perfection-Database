@@ -34,7 +34,7 @@ CREATE TABLE DataModel.Customers
     BillToCustomerKey int NOT NULL,
     AccountOpenedDate date NOT NULL,
     StandardDiscountPercentage decimal(18, 3) NOT NULL,
-    PaymentDaysFromInvoiceDate int NOT NULL,
+    PaymentDaysFromInvoice int NOT NULL,
     IsRecentlyActive bit NOT NULL,
     Comments nvarchar(4000) NULL,
     PreferedTransportCompanySupplierKey int NULL,
