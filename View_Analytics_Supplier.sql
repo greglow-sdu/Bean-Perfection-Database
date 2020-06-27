@@ -1,0 +1,32 @@
+CREATE OR ALTER VIEW Analytics.Supplier
+AS
+SELECT SupplierKey,
+       SupplierCode AS [Supplier Code],
+       Supplier,
+       PrimaryContact AS [Primary Contact],
+       AlternateContact AS [Alternate Contact],
+       PrimaryPhoneNumber AS [Primary Phone Number],
+       AlternatePhoneNumber AS [Alternate Phone Number],
+       FaxNumber AS [Fax Number],
+       MobileNumber AS [Mobile Number],
+       EmailAddress AS [Email Address],
+       StreetAddress1 AS [Street Address 1],
+       StreetAddress2 AS [Street Address 2],
+       StreetSuburb AS [Street Suburb],
+       StreetPostalCode AS [Street Postal Code],
+       Country,
+       MailingAddress1 AS [Mailing Address 1],
+       MailingAddress2 AS [Mailing Address 2],
+       MailingSuburb AS [Mailing Suburb],
+       MailingPostalCode AS [Mailing Postal Code],
+       MailingCountry AS [Mailing Country],
+       WebsiteURL AS [Website URL],
+       IsATransportCompany AS [Is a Transport Company],
+       AccountOpenedDate AS [Account Opened Date],
+       SupplierAccountCode AS [Supplier Account Code],
+       IsRecentlyActive AS [Is Recently Active],
+       Comments,
+       PreferedTransportCompanySupplierKey,
+       StreetAddressMapURL AS [Street Address Map URL]
+FROM DataModel.Suppliers;
+GO
