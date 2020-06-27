@@ -8,7 +8,7 @@ CREATE TABLE DataModel.Customers
         CONSTRAINT DF_DataModel_Customers_CustomerKey
             DEFAULT (NEXT VALUE FOR DataModel.CustomerKey),
     CustomerCode nvarchar(8) NOT NULL,
-    CustomerName nvarchar(35) NOT NULL,
+    Customer nvarchar(35) NOT NULL,
     PrimaryContact nvarchar(35) NULL,
     AlternateContact nvarchar(35) NULL,
     PrimaryPhoneNumber nvarchar(20) NOT NULL,
