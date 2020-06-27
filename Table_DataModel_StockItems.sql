@@ -7,13 +7,13 @@ CREATE TABLE DataModel.StockItems
         CONSTRAINT PK_DataModel_StockItems PRIMARY KEY
         CONSTRAINT DF_DataModel_StockItems_StockItemKey
             DEFAULT (NEXT VALUE FOR DataModel.StockItemKey),
-    StockCode varchar(8) NOT NULL,
-    StockItemDescription varchar(50) NOT NULL,
-    Size varchar(20) NULL,
-    SellingPackage varchar(35) NOT NULL,
+    StockCode nvarchar(8) NOT NULL,
+    StockItemDescription nvarchar(50) NOT NULL,
+    Size nvarchar(20) NULL,
+    SellingPackage nvarchar(35) NOT NULL,
     WeightPerUnit decimal(18, 3) NOT NULL,
     StockCategoryKey int NOT NULL,
-    BarCode varchar(20) NULL,
+    BarCode nvarchar(20) NULL,
     TaxRate decimal(18, 3) NOT NULL,
     IsStocktakeItem bit NOT NULL,
     UnitPrice decimal(18, 2) NOT NULL,
@@ -30,18 +30,18 @@ CREATE TABLE DataModel.StockItems
     IsShownOnPriceList bit NOT NULL,
     AddedDate date NOT NULL,
     LastPriceChangeDateTime datetime NOT NULL,
-    Brand varchar(15) NOT NULL,
-    OrderingPackageKey int NOT NULL,
+    Brand nvarchar(15) NOT NULL,
+    OrderingPackage nvarchar(35) NOT NULL,
     QuantityOnHand int NOT NULL,
     QuantityAtLastStocktake int NULL,
     ReorderLevel int NOT NULL,
     TypicalLeadTimeDays int NOT NULL,
     IsRecentlyActive bit NOT NULL,
     LatestCostPrice decimal(18, 2) NULL,
-    Comments varchar(4000) NULL,
+    Comments nvarchar(4000) NULL,
     PrimarySupplierKey int NULL,
     AlternateSupplierKey int NULL,
-    PrimarySupplierStockCode varchar(20) NULL,
-    AlternateSupplierStockCode varchar(20) NULL
+    PrimarySupplierStockCode nvarchar(20) NULL,
+    AlternateSupplierStockCode nvarchar(20) NULL
 );
 GO
