@@ -8,7 +8,7 @@ CREATE TABLE DataModel.StaffMembers
         CONSTRAINT DF_DataModel_StaffMembers_StaffMemberKey 
             DEFAULT (NEXT VALUE FOR DataModel.StaffMemberKey),
     LogonName nvarchar(8) NOT NULL,
-    StaffMemberName nvarchar(30) NOT NULL,
+    StaffMember nvarchar(30) NOT NULL,
     IsSalesperson bit NOT NULL
 );
 GO
